@@ -1,0 +1,15 @@
+.wbdv-sticky-navbar {
+    background-color: lightblue;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.wbdv-container {
+    padding-top: 100px;
+}
+
+.wbdv-navbar-title {
+    font-size: 22px;
+}
