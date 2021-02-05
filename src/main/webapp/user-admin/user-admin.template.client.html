@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./user-admin.style.client.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../services/user.service.client.js"></script>
+    <script src="./user-admin.controller.client.js"></script>
+    <title>User Admin</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <h1>User Admin</h1>
+
+        <table class="table table-striped w-auto">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Role</th>
+                    <th></th>
+                </tr>
+                <tr class="wbdv-form">
+                    <td>
+                        <input class="form-control"
+                               id="usernameFld"
+                               placeholder="Username"/>
+                    </td>
+                    <td>
+                        <input class="form-control"
+                               id="passwordFld"
+                               type="password"
+                               placeholder="Password"/>
+                    </td>
+                    <td>
+                        <input class="form-control"
+                               id="firstNameFld"
+                               placeholder="First Name"/>
+                    </td>
+                    <td>
+                        <input class="form-control"
+                               id="lastNameFld"
+                               placeholder="Last Name"/>
+                    </td>
+                    <td>
+                        <select class="form-control"
+                                id="roleFld">
+                            <option value="FACULTY">Faculty</option>
+                            <option value="STUDENT">Student</option>
+                            <option value="ADMIN">Admin</option>
+                        </select>
+                    </td>
+                    <td>
+                        <span class="pull-right wbdv-nowrap">
+                            <button class="btn btn-light fas fa-search wbdv-search"/>
+                            <button class="btn btn-light fas fa-plus wbdv-create"/>
+                            <button class="btn btn-light fas fa-check wbdv-update"/>
+                        </span>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>prof1</td>
+                    <td></td>
+                    <td>Professor</td>
+                    <td>One</td>
+                    <td>Faculty</td>
+                    <td>
+                        <span class="pull-right wbdv-nowrap">
+                            <button class="btn btn-light fas fa-times wbdv-remove"/>
+                            <button class="btn btn-light fas fa-pencil wbdv-edit"/>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>student1</td>
+                    <td></td>
+                    <td>Student</td>
+                    <td>One</td>
+                    <td>Student</td>
+                    <td>
+                        <span class="pull-right wbdv-nowrap">
+                            <button class="btn btn-light fas fa-times wbdv-remove"/>
+                            <button class="btn btn-light fas fa-pencil wbdv-edit"/>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
