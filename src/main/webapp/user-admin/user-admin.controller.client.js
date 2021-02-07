@@ -42,7 +42,7 @@
                     <td>${user.lastName}</td>
                     <td>${user.role}</td>
                     <td>
-                        <span class='pull-right wbdv-nowrap'>
+                        <span class='pull-right wbdv-nowrap-right-align'>
                             <button class='btn btn-light fas fa-times wbdv-remove' id='remove-${user._id}'/>
                             <button class='btn btn-light fas fa-pencil wbdv-edit' id='edit-${user._id}'/>
                         </span>
