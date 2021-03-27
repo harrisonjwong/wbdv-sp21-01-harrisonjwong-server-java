@@ -1,12 +1,22 @@
 package com.example.wbdvsp2101harrisonjwongserverjava.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="widgets")
 public class Widget {
 
   private String name;
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer id;
   private String type;
   private Integer widgetOrder;
+
+  @Column(columnDefinition = "TEXT")
   private String text;
+  @Column(columnDefinition = "TEXT")
   private String url;
   private Integer size;
   private Integer width;
